@@ -22,7 +22,7 @@ $(document).ready(function () {
 
     var eggFour = Math.floor(Math.random() * 12) + 1;
     console.log("eggOne" + eggFour)
-    $("#img4").html("<img src=" + "assets/images/RLcS5WK.png" + " value=" + eggFour + ">");
+    $("#img4").html("<img src=" + "assets/images/nwtTjMT.png" + " value=" + eggFour + ">");
 
     //  Default Zeros
     var wins = 0;
