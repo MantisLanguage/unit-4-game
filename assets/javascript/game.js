@@ -74,7 +74,7 @@ $(document).ready(function () {
                 reset();
 
             }
-            //   count surpases ranNum = loss
+            //   count surpasses ranNum = loss
             else if (newScore > ranNum) {
                 losses++;
                 $(".losses").html("Losses: " + losses);
