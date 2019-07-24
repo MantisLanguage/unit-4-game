@@ -1,0 +1,44 @@
+body {
+background-image: url("../images/manga-fox-logo-yoshi-wallpaper.jpg")
+
+
+}
+
+.instructions {
+background-color: white;
+text-align: center;
+width: auto;
+opacity: .8;
+color: green;
+}
+
+.number {
+    background-color: white;
+text-align: center;
+width: auto;
+opacity: .8;
+color: green;
+size: 190%;
+font-size: 333%;
+}
+
+.wins {
+    background-color: white;
+    text-align: center;
+    width: auto;
+    opacity: .8;
+    color: green;
+    size: 190%;
+    font-size: 164%;
+    margin-left: -640px;
+}
+.losses { 
+    background-color: white;
+    text-align: center;
+    width: auto;
+    opacity: .8;
+    color: green;
+    size: 190%;
+    font-size: 164%;
+    margin-left: -640px;
+}
