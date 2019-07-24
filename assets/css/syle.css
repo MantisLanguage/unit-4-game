@@ -1,7 +1,6 @@
 body {
 background-image: url("../images/manga-fox-logo-yoshi-wallpaper.jpg")
 
-
 }
 
 .instructions {
@@ -41,4 +40,31 @@ font-size: 333%;
     size: 190%;
     font-size: 164%;
     margin-left: -640px;
+}
+
+#img1 {
+    float: left;
+}
+
+#img2 {
+    float: left;
+}
+
+#img3 {
+    float: left;
+}
+
+#img4 {
+    float: left;
+}
+
+.count {
+    float: right;
+    background-color: white;
+    text-align: center;
+    width: auto;
+    opacity: .8;
+    color: green;
+    size: 190%;
+    font-size: 333%;
 }

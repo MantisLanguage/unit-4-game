@@ -2,13 +2,13 @@ $(document).ready(function () {
 
     //  Global Variables including Randomly Generated Numbers
 
-    // Primary focus Number, max ceiling of 134
-    var ranNum = Math.floor(Math.random() * 111) + 23;
+    // Primary focus Number, max ceiling of 120, minimum 19
+    var ranNum = Math.floor(Math.random() * 102) + 19;
     console.log("ranNum" + ranNum)
     $(".number").html(ranNum);
 
-    // Eggs number assignment and image assignment, Egg 1 lightest, Egg 2 and 3 Medium, Egg 4 Heavy
-    var eggOne = Math.floor(Math.random() * 11)+1;
+    // Eggs number assignment and image assignment
+    var eggOne = Math.floor(Math.random() * 12)+1;
     console.log("eggOne" + eggOne)
     $("#img1").html("<img src=" + "assets/images/6Z2c6UT.png" + " value=" + eggOne + ">");
 
@@ -20,7 +20,7 @@ $(document).ready(function () {
     console.log("eggThree" + eggThree)
     $("#img3").html("<img src=" + "assets/images/nwtTjMT.png" + " value=" + eggThree + ">");
 
-    var eggFour = Math.floor(Math.random() * 11) + 9;
+    var eggFour = Math.floor(Math.random() * 12) + 1;
     console.log("eggOne" + eggFour)
     $("#img4").html("<img src=" + "assets/images/RLcS5WK.png" + " value=" + eggFour + ">");
 
@@ -37,14 +37,14 @@ $(document).ready(function () {
     // End global variables
     // Begin Gaming Functions
     function reset() {
-        ranNum = Math.floor(Math.random() * 111) + 23;
+        ranNum = Math.floor(Math.random() * 102) + 19;
         console.log("ranNum: " + ranNum);
         $(".number").html(ranNum);
 
         score = 0;
         $(".count").html(score);
 
-        eggOne = Math.floor(Math.random() * 11)+1;
+        eggOne = Math.floor(Math.random() * 12)+1;
         console.log("Egg 1: " + eggOne);
         $("#img1").html("<img src=" + "assets/images/6Z2c6UT.png" + " value=" + eggOne + ">");
 
@@ -56,7 +56,7 @@ $(document).ready(function () {
         console.log("Egg 3: " + eggThree);
         $("#img3").html("<img src=" + "assets/images/nwtTjMT.png" + " value=" + eggThree + ">");
 
-        eggFour = Math.floor(Math.random() * 11)+9;
+        eggFour = Math.floor(Math.random() * 12)+1;
         console.log("Egg 4: " + eggFour);
         $("#img4").html("<img src=" + "assets/images/RLcS5WK.png" + " value=" + eggFour + ">");
 
@@ -98,6 +98,7 @@ $(document).ready(function () {
             wins++;
             $(".wins").html("Wins: " + wins);
             console.log("Wins: " + wins);
+            alert("Yoshi!")
             reset();
         }
 
